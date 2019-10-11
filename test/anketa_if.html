@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let lastName = prompt("Ваша фамилия?", "Иванов");
+        let name = prompt("Ваше имя?", "Иван");
+        let patronymic = prompt("Ваше отчество?", "Иванович");
+        let age = prompt("Сколько Вам полных лет?", 18);
+        let gender = confirm("Ваш пол мужской?");
+        let pension;
+
+        if (gender) {
+            gender="мужской";
+            if (age > 61) {
+                pension="да";
+            }
+            else {
+                pension="нет";
+            }
+        }
+        else  {
+            gender="женский";
+            if (age > 56) {
+                pension="да";
+            }
+            else {
+                pension="нет";
+            }
+        }
+
+        alert("ФИО: "+ lastName + " " + name + " " + patronymic + '\n\r '
+            + "возраст, лет: " + age + '\n\r '
+            + "возраст, дней: "+ age * 365 + '\n\r '
+            + "пол: " + gender + '\n\r '
+            + "пенсионный возраст: " + pension);
+</script>
+
+</body>
+</html>

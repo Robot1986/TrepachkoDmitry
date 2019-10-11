@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oper</title>
+</head>
+<body>
+    <script>
+    "use strict";
+    let lastName = prompt("Ваша фамилия?", "Иванов");
+    let name = prompt("Ваше имя?", "Иван");
+    let patronymic = prompt("Ваше отчество?", "Иванович");
+    let age = prompt("Сколько Вам полных лет?", 18);
+    let gender = confirm("Ваш пол мужской?");
+    let pension;
+    let genderUser;
+    genderUser = gender ? "мужской" : "женский";
+    pension = ( gender && age > 61) ? 'да' : ( ( !gender && age > 56) ? 'да' : 'нет' );
+    alert("ФИО: "+ lastName + " " + name + " " + patronymic + '\n\r '
+        + "возраст, лет: " + age + '\n\r '
+        + "возраст, дней: "+ age * 365 + '\n\r '
+        + "пол: " + genderUser + '\n\r '
+        + "пенсионный возраст: " + pension);
+    </script>
+</body>
+</html>

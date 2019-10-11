@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anketa</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let lastName;
+        do {
+            lastName = prompt("Ваша фамилия?","Трепачко");
+        } while (lastName == null || !lastName);
+
+        let name;
+        do {
+            name = prompt("Ваше имя?", "Дмитрий");
+        } while (name == null || name.length <=1);
+
+        let patronymic;
+        do {
+            patronymic = prompt("Ваше отчество?", "Сергеевич");
+        } while (patronymic == null || patronymic.length <=1);
+
+        let age;
+        do {
+            age = prompt("Укажете, пожалуйста, ваш возраст?", "32");
+        } while ( age<=0 || age > 148  || !age);
+
+        let genderUser;
+        let pension;
+        let gender = confirm("Ваш пол мужской?");
+        genderUser = gender ? "мужской" : "женский";
+        pension = ( gender && age > 61) ? 'да' : ( ( !gender && age > 56) ? 'да' : 'нет' );
+
+        alert("ФИО: "+ lastName + " " + name + " " + patronymic + '\n\r '
+            + "возраст, лет: " + age + '\n\r '
+            + "возраст, дней: "+ age * 365 + '\n\r '
+            + "пол: " + genderUser + '\n\r '
+            + "пенсионный возраст: " + pension);
+    </script>
+</body>
+</html>

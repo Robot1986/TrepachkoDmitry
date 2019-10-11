@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>words</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let text = prompt('Введите текст произвольной длины: ');
+        let word = text.split(" ").sort(function(a, b){
+            return b.length - a.length
+        });
+        alert(word[0] + ';' + ' ' + word[1] + ';' + ' ' + word[2]);
+    </script>
+</body>
+</html>
