@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header, .footer {
+    background-color: #add8e6;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color:#0000ff;
+}
+
+.main {
+    background-color: #f0e68c;
+    max-width: 1400px;
+    min-height: 300px;
+}
+
+.sitebar {
+    float:left;
+    padding-left: 14px;
+    width:170px;
+}
+
+.sitebar h3 {
+    font-size: 14px;
+    padding:20px 0;
+}
+
+ul{
+    padding: 0 5px 10px 20px ;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#0000ee;
+}
+
+.content{
+    background: url("https://avatanplus.com/files/resources/mid/5a2391159fb291601aeebc96.png") white right top repeat-y;
+    background-size: 50px;
+    margin-left: 170px;
+    min-height: 300px;
+    padding:20px 0 0 22px;
+}
+
+.content h3{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+
+.img {
+    width:200px;
+    float:left;
+    padding-right: 20px;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+.footer {
+    clear:both;
+}
+
+@media all and (max-width: 564px) {
+    img {
+        width:100%;
+        margin-bottom: 1em;
+    }
+
+    .content {
+        background: #ffffff;
+    }
+}
+
+@media (max-width: 481px) {
+    .sitebar, .content {
+        width:100%;
+        float:none;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .sitebar {
+        padding-left:25%;
+    }
+
+}
