@@ -14,8 +14,10 @@
     let gender = confirm("Ваш пол мужской?");
     let pension;
     let genderUser;
+
     genderUser = gender ? "мужской" : "женский";
     pension = ( gender && age > 61) ? 'да' : ( ( !gender && age > 56) ? 'да' : 'нет' );
+
     alert("ФИО: "+ lastName + " " + name + " " + patronymic + '\n\r '
         + "возраст, лет: " + age + '\n\r '
         + "возраст, дней: "+ age * 365 + '\n\r '
