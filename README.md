@@ -1,3 +1,3 @@
 # TrepachkoDmitry
 Домашние задания
-(Тест)(http://localhost:63342/TrepachkoDmitry/test/site.html?_ijt=hlfckevlv4kh4embcasrl0jvs0)
+[Тест] (https://github.com/Robot1986/TrepachkoDmitry.github.io/blob/master/test_site/site.html)
