@@ -7,7 +7,7 @@
 <body>
     <script>
         "use strict";
-        let regExp = new RegExp(/[!@#$%^&*()<>,.+-~`?0123456789]/);
+        let regExp = new RegExp(/[^а-яА-ЯёЁ]+$/);
         let lastName;
         do {
             lastName = prompt("Ваша фамилия?","Трепачко");
@@ -37,6 +37,7 @@
         alert("ФИО: "+ lastName + " " + name + " " + patronymic + '\n\r '
             + "возраст, лет: " + age + '\n\r '
             + "возраст, дней: "+ age * 365 + '\n\r '
+            + "через 5 лет вам будет: " + (age + 5) + '\n\r '
             + "пол: " + genderUser + '\n\r '
             + "пенсионный возраст: " + pension);
     </script>
