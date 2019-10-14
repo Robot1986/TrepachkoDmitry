@@ -16,12 +16,12 @@
         let name;
         do {
             name = prompt("Ваше имя?", "Дмитрий");
-        } while (name == null || name.length < 2 || regExp.test(name));
+        } while (name == null || name.length < 2 || !regExp.test(name));
 
         let patronymic;
         do {
             patronymic = prompt("Ваше отчество?", "Сергеевич");
-        } while (patronymic == null || patronymic.length < 2 || regExp.test(patronymic));
+        } while (patronymic == null || patronymic.length < 2 || !regExp.test(patronymic));
 
         let age;
         do {
