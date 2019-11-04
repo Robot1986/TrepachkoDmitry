@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forEach</title>
+</head>
+<body>
+<script>
+    "use strict";
+    var text = prompt('Введите строку', '');
+    function countVowels(str) {
+        var vovels=0;
+        var vowelsArr = str.split('');
+        var allVowels = {'a':true, 'о':true, 'и':true, 'е':true, 'ё':true, 'э':true, 'ы':true, 'у':true, 'ю':true, 'я':true};
+        vowelsArr.forEach(nextVowels);
+        function nextVowels(char) {
+            if(char in allVowels ){
+                vovels++
+            }
+        }
+        return vovels;
+    }
+    console.log('Количество гласных: '+ countVowels(text));
+</script>
+
+</body>
+</html>
